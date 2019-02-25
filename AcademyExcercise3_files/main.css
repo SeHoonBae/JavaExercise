@@ -1,0 +1,1021 @@
+/*
+	create by pinn
+*/
+
+@font-face {
+	font-family: maple; 
+	src: url('/webfonts/Maplestory.ttf')
+}
+
+@font-face {
+	font-family: hack; 
+	src: url('/webfonts/Hack.ttf')
+}
+
+
+
+html, body, div, span, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, input, a, textarea, select, option, table, th, td {
+	font-family: maple;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #555;
+	/* color: #777; */
+}
+
+html { 
+	overflow-y: scroll; 
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+#menu {
+	background-color: #686E80;
+	height: 50px;
+	min-width: 1248px;
+}
+
+#menu > #menu1 {
+	border-right: 1px dashed lightgray;
+	width: 348px;
+	height: 50px;
+	margin: 0px; padding: 0px;
+	list-style-type: none;
+	float: left;
+}
+
+#menu > #menu2 {
+	width: 800px;
+	height: 50px;
+	margin: 0px; padding: 0px;
+	list-style-type: none;
+	float: left;
+}
+
+#menu > #menu1 > li {
+	float: left;
+	margin: 0px; padding: 0px;
+	color: #fff;
+	padding-top: 12px;
+	padding-left: 25px;
+}
+
+#menu > #menu2 > li {
+	float: left;
+	margin: 0px; padding: 0px;
+	color: #fff;
+	padding-top: 12px;
+	padding-left: 21px;
+}
+
+#menu > #menu1 > li > a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#menu > #menu2 > li > a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#menu > #menu1 > li > span {
+	color: #fff;
+}
+
+
+
+#main, #left, #right {
+	
+}
+
+#left, #right {
+	float: left;
+}
+
+#left {
+	width: 348px;
+	border-right: 1px dashed gray;
+	padding: 25px;
+}
+
+#left #lefticon {
+	font-size: 74px;
+	color:#686E80;
+	float: left;
+	margin: 5px 15px;
+}
+
+#right {
+	width: 800px;
+	width: calc(100% - 350px);
+	padding: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 스크롤바 */
+::-webkit-scrollbar{width: 16px;}
+::-webkit-scrollbar-track {background-color:#DCDFE7;}
+::-webkit-scrollbar-thumb {background-color:#DCDFE7;border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover {background: #555;}
+::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+width:16px;height:16px;background:#DCDFE7;} 
+
+
+* { outline: none !important; }
+
+
+.form-control:focus, .form-control:active, .form-control:focus, .form-control:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid #ced4da !important;
+}
+
+.form-control.active.focus, .form-control.active:focus, .form-control.focus, .form-control:active.focus, .form-control:active:focus, .form-control:focus,
+.form-control.active.focus, .form-control.active:focus, .form-control.focus, .form-control:active.focus, .form-control:active:focus, .form-control:focus {
+    outline: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################ */
+
+/* ################################################ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############ 시작:: 카페 추가 */
+
+/* 시작:: Common MarkDown */
+
+.md {
+		color: #555;
+		font-size: 14px;
+}
+
+
+.md h1 { /* 큰제목 */
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 4px;
+	margin-bottom: 16px;
+	font-size: 24px;
+	font-variant: small-caps;
+}
+
+.md h1 i {
+	font-size: 16px;
+	color: #666;
+}
+
+
+.md h2 { /* 중간제목 */
+	border-bottom: 1px dashed #ddd;
+	padding-bottom: 4px;
+	margin-bottom: 16px;
+	font-size: 21px;
+	font-variant: small-caps;
+}
+
+.md h2 i {
+	font-size: 12px;
+	color: #666;
+}
+
+.md h3 {
+	font-size: 18px;
+}
+
+
+.md blockquote { /* 인용 */
+	border-left: 7px solid #eee;
+	padding-left: 7px;
+	margin: 7px;
+}
+
+
+
+.md pre {
+	font-family: "consolas";
+	border-left: 1px solid #ccc;	
+	border-right: 1px solid #ccc;	
+	background-color: rgba(0, 0, 0, .021);
+	padding: 10px 15px;
+}
+
+
+.md pre code {
+	font-family: hack !important;
+}
+
+.md s, .md strong {
+	color: cornflowerblue;
+	font-weight: normal;
+}
+
+.md a {
+	color: #ff8080;
+	text-decoration: none;
+}
+
+.md a:hover {
+	color: tomato;
+}
+
+.md a > i {
+	font-size: .74rem;
+}
+
+/* 끝:: Common MarkDown */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################ */
+
+/* ################################################ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 시작:: Word MarkDown */
+
+.md.word {
+		
+}
+
+
+.md.word h1 { /* 큰제목 */
+
+}
+
+
+.md.word h2 { /* 중간제목 */
+	
+}
+
+
+.md.word blockquote { /* 인용 */
+	
+}
+
+
+
+.md.word pre {
+	
+}
+
+
+.md.word pre code {
+	
+}
+
+/* 끝:: Word MarkDown */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################ */
+
+/* ################################################ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 시작:: Class MarkDown */
+
+.md.word {
+		
+}
+
+
+.md.word h1 { /* 큰제목 */
+
+}
+
+
+.md.word h2 { /* 중간제목 */
+	
+}
+
+
+.md.word blockquote { /* 인용 */
+	
+}
+
+
+
+.md.word pre {
+	
+}
+
+
+.md.word pre code {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ############ 끝:: 카페 추가 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################ */
+
+/* ################################################ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 시작:: Bookmark MarkDown */
+
+
+
+.md.bookmark h1 {
+	margin-top: 45px;
+}
+
+.md.bookmark h1:first-child {
+	margin-top: 15px;
+}
+
+
+
+
+.md.bookmark li i { /* 설명에 다는 해시태그 아이콘 */
+	font-size: 12px;
+	margin-right: 1px;
+	color: #888;
+}
+
+.md.bookmark li i+a {
+	color: #888;
+}
+
+
+/* 끝:: Bookmark MarkDown */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################ */
+
+/* ################################################ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 시작:: Notice MarkDown */
+
+.md.notice {
+
+}
+
+.md.notice h1 {
+	font-variant: normal;
+	border: 0px;
+	font-size: 18px;
+	margin: 50px 0px 5px 0px;
+}
+
+.md.notice h1:first-child {
+	margin: 20px 0px 5px 0px;
+}
+
+.md.notice ul, .md.notice ol {
+	margin: 0px;
+	padding: 0px;
+	margin-left: 15px;
+}
+
+/* 끝:: Notice MarkDown */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################ */
+
+/* ################################################ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 시작:: Index MarkDown */
+
+
+
+/* 클래스.일정(달력) */
+/* 
+처음에 Class 페이지에 만들었다가 Class 페이지를 수업 코드 조각용으로 사용하는 바람에 Index로 밀려난 부분에 대한 서식(개강일정, 달력 등)
+
+.md.class.cal table {
+	border-collapse: collapse;
+}
+
+
+.md.class.cal table th {
+	border: 1px solid #A9A9A9;
+	background-color: #787E93;
+	color: white;
+	padding: 4px 20px;
+	font-weight: normal;
+	font-size: .9rem;
+	text-align: center;
+}
+
+.md.class.cal table th:not(:last-child) {
+	border-right-color: #ccc;
+}
+
+
+.md.class.cal table td {
+	border: 1px solid #A9A9A9;
+	padding: 3px 10px;
+	width: 180px;
+	height: 74px;
+	font-size: .8rem;
+	vertical-align: top;
+	color: #555;
+	line-height: 1.3rem;
+}
+
+.md.class.cal table td strong {
+	float: right;
+	margin: 3px 0px;
+	color: #777;
+}
+
+.md.class.cal table td i {
+	color: #777;
+} */
+
+
+
+.md.index {
+
+}
+
+.md.index h1, .md.index h2 {
+	font-variant: normal;	
+	margin-top: 50px;
+}
+
+.md.index h1:first-child, .md.index h2:first-child {
+	margin: 20px 0px 5px 0px;
+}
+
+.md.index li {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+/* 끝:: Index MarkDown */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################ */
+
+/* ################################################ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 시작:: 확대처리 */
+@media all and (max-width: 800px) {
+        #left { display: none; }
+		#right { width: 100%; }
+		#right h1 { border-bottom: 1px dashed #ccc; margin-bottom: 15px; }
+}
+/* 끝:: 확대처리 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################ */
+
+/* ################################################ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 시작:: Question MarkDown */
+
+.md.question {
+	
+}
+
+.md.question h1 {
+	font-variant: normal;	
+}
+
+
+.md.question h2 { /* 문제 번호 */
+	font-variant: normal;
+	border: 0px;	
+	font-size: 17px;
+	margin-top: 100px;
+	margin-bottom: 6px;
+	padding: 0px;
+	color: cornflowerblue;
+}
+
+.md.question h1 + h2 {
+	margin-top: 30px;
+}
+
+.md.question strong {
+	margin-top: 0px;
+}
+
+.md.question em { /* 입력칸, 출력칸 제목 */
+	font-style: normal;
+	color: tomato;
+}
+
+.md.question blockquote { /* 입력칸 */
+	margin-left: 0px;
+	margin-top: -10px;
+	border: 1px dashed #ccc;
+	background-color: rgba(0, 0, 0, .021);
+	border-radius: 2px;
+	font-family: hack !important;
+	display: inline-block;
+	padding-left: 2px;
+	color: #777;
+	margin-bottom: 14px;
+}
+
+.md.question blockquote p { /* 입력칸 */
+	font-family: hack;
+	font-size: 12px;
+	padding: 5px;
+	margin: 5px;
+	margin-right: 9px;
+	margin-bottom: 2px;
+	line-height: 20px;
+	display: inline-block;
+	color: #777;
+}
+
+.md.question blockquote p i.far {
+	color: tomato;
+	font-size: 13px;
+} 
+
+.md.question blockquote+blockquote {
+	/*background: yellow;*/
+	margin-top: -16px;
+}
+
+.md.question pre { /* 출력칸 */
+	margin-left: 0px;
+	margin-top: -10px;
+	border: 1px dashed #ccc;
+	background-color: rgba(0, 0, 0, .021);
+	border-radius: 2px;
+	font-family: hack !important;
+	display: inline-block;
+	padding-bottom: 6px;
+	padding-left: 13px;
+	padding-right: 13px;
+	/* color: #777; */
+	color: #555;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+.md.question pre code { /* 출력칸 */
+	font-family: hack;
+	font-size: 12px;
+	line-height: 20px;
+	display: inline-block;
+	/* color: #777; */
+	color: #555;
+}
+
+.md.question pre+p {
+	margin-top: -2px;
+}
+
+.md.question ul {
+	padding-left: 18px;
+	margin-top: -14px;
+}
+
+.md.question ul > li > ul {
+	padding-left: 18px;
+	margin-top: 0px;
+}
+
+.md.question a { /* 문제 도움 링크 */
+	color: #28a745;
+	color: #28a745;
+	color: #17a2b8;
+	color: #20c997;
+}
+
+/* 끝:: Question MarkDown */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################ */
+
+/* ################################################ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 시작:: Class MarkDown */
+
+.md.class {
+
+}
+
+.md.class h1 {
+	font-variant: normal;
+	font-size: 22px;
+}
+
+.md.class h2 {
+	font-variant: normal;
+	font-size: 18px;
+	border: 0px;
+	margin: 0px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.md.class h3 {
+	font-size: 16px;	
+}
+
+.md.class > ul {
+	padding: 0px;
+	margin: 0px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.md.class pre {
+	border: 0px;
+	background-color: rgba(0, 0, 0, .021);
+	border: 1px solid rgba(0, 0, 0, .074);
+	font-family: hack;
+	font-size: 12px;
+	/* color: #777; */
+	color: #555;
+	line-height: 20px;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	display: inline-block;
+	padding: 21px 46px 21px 30px;
+}
+
+.md.class li > code {
+	/* color: #777; */
+	color: #555;
+	font-size: 12px;
+	background-color: rgba(0, 0, 0, .1);
+	border-radius: 3px;
+	padding: 2px 4px;
+	text-shadow: 1px 1px 1px white;
+}
+
+.md.class table, .md.class th, .md.class td {
+	border: 1px solid #ccc;
+	padding: 4px 10px;
+}
+
+.md.class .colorpane {
+	display: inline-block; 
+	padding: 10px 30px; 
+	margin: 10px 5px 5px 5px;
+}
+
+
+
+/* 끝:: Class MarkDown */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################################################ */
+
+/* ################################################ */

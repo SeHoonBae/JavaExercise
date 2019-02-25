@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://211.63.89.31/question.php?003 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Class</title>
+
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="pinn">
+<link rel="stylesheet" href="./AcademyExcercise3_files/bootstrap.css">
+<link rel="stylesheet" href="./AcademyExcercise3_files/all.css">
+<link rel="stylesheet" href="./AcademyExcercise3_files/main.css">
+<script src="./AcademyExcercise3_files/jquery-3.3.1.min.js.다운로드"></script>
+<script src="./AcademyExcercise3_files/bootstrap.js.다운로드"></script>
+<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">-->
+<style>
+.qtable td { padding: 5px 10px; text-align: right; }
+
+.qtable .black, .qtable2 .black { background-color: #efefef; }
+.qtable .green, .qtable2 .green { background-color: #ddffee; }
+.qtable .red, .qtable2 .red { background-color: #ffe3e3; }
+.qtable2 td { padding: 2px 10px; text-align: center; }
+</style>
+
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+	
+<nav id="menu">
+	<ul id="menu1">			
+		<li><i class="fas fa-home"></i> <a href="http://211.63.89.31/" target="_top">Home</a> <span></span></li>
+		<div style="clear:both;"></div>
+	</ul>
+	<ul id="menu2">			
+		<li><i class="fas fa-chalkboard-teacher"></i> <a href="http://211.63.89.31/class.php" target="_top">Class.수업</a></li>
+		<li><i class="fas fa-volume-up"></i> <a href="http://211.63.89.31/notice.php" target="_top">Notice.알림</a></li>
+		<li><i class="fas fa-code"></i> <a href="http://211.63.89.31/question.php" target="_top">Question.문제</a></li>
+		<li><i class="far fa-file-alt"></i> <a href="http://211.63.89.31:8098/" target="_top">File.자료실</a></li>
+		<li><i class="far fa-bookmark"></i> <a href="http://211.63.89.31/bookmark.php" target="_top">Bookmark.즐겨찾기</a></li>
+		<!-- <li><i class="fas fa-search"></i> <a href="http://211.63.89.31/word.php" target="_top">Word.용어정리</a></li> -->
+		<!-- <li><i class="fas fa-map-marker-alt"></i> <a href="http://211.63.89.31/place.php" target="_top">Place.맛집</a></li> -->
+		<div style="clear:both;"></div>
+	</ul>
+	<div style="clear:both;"></div>
+</nav>
+	<section id="main" style="height: 11608px;">
+		<!-- 좌측 서브 영역 -->
+		<div id="left" style="height: 11658px;">
+			<i class="fas fa-code" id="lefticon" onclick="location.href=&#39;questionpick.php&#39;;"></i>
+			<div style="clear: both;" class="mdlist">
+				<div onclick="location.href=&quot;question.php?001&quot;;"><span class="no">001</span><span class="title">변수+자료형+데이터</span></div><div onclick="location.href=&quot;question.php?002&quot;;"><span class="no">002</span><span class="title">변수+자료형+형변환+입출력+연산자</span></div><div onclick="location.href=&quot;question.php?003&quot;;" class="now"><span class="no">003</span><span class="title">메소드</span></div><div onclick="location.href=&quot;question.php?004&quot;;"><span class="no">004</span><span class="title">날짜+시간</span></div><div onclick="location.href=&quot;question.php?005&quot;;"><span class="no">005</span><span class="title">제어문(조건문)</span></div><div onclick="location.href=&quot;question.php?006&quot;;"><span class="no">006</span><span class="title">제어문(반복문1)</span></div><div onclick="location.href=&quot;question.php?007&quot;;"><span class="no">007</span><span class="title">제어문(반복문2)</span></div><div onclick="location.href=&quot;question.php?008&quot;;"><span class="no">008</span><span class="title">문자열</span></div><div onclick="location.href=&quot;question.php?009&quot;;"><span class="no">009</span><span class="title">배열(1차원)</span></div><div onclick="location.href=&quot;question.php?010&quot;;"><span class="no">010</span><span class="title">배열(2차원)</span></div><div onclick="location.href=&quot;question.php?011&quot;;"><span class="no">011</span><span class="title">클래스</span></div><div onclick="location.href=&quot;question.php?012&quot;;"><span class="no">012</span><span class="title">클래스(static)</span></div><div onclick="location.href=&quot;question.php?013&quot;;"><span class="no">013</span><span class="title">클래스(생성자)</span></div>			</div>
+			<style>
+				.mdlist {
+					font-size: 14px;
+					margin-top: 100px;
+					padding-left: 15px;
+					text-align: right;
+				}
+
+				.mdlist div {
+					cursor: pointer;
+					opacity: .5;
+				}
+
+				.mdlist div.now {
+					opacity: 1;
+				}
+
+				.mdlist .no {
+					color: cornflowerblue;
+					margin-right: 5px;
+				}
+
+				.mdlist .title {
+					font-size: 14px;
+				}
+			</style>
+		</div>
+		<!-- 우측 메인 영역 -->
+		<div id="right" style="height: 11658px;">
+			<div class="md question"><h1>메소드</h1>
+<h2>요구사항.001</h2>
+<p>호출하면 인사말을 출력하는 메소드 3개를 선언하고 호출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>없음</p>
+</blockquote>
+<p><em>호출</em></p>
+<pre><code>hello();
+introduce();
+bye();</code></pre>
+<p><em>출력</em></p>
+<pre><code>안녕하세요. //hello()
+저는 홍길동입니다. //introduce()
+안녕히가세요. //bye()</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>void hello()<br></li>
+<li>void introduce()<br></li>
+<li>void bye()<br></li>
+</ul>
+<p><em>수업</em></p>
+<ul>
+<li><a href="http://211.63.89.31/class.php?Method" target="_blank"><i class="fab fa-slack-hash"></i> 메소드 선언하기</a></li>
+</ul>
+<h2>요구사항.002</h2>
+<p>숫자 1개를 입력받아 4자리로 출력하는 메소드를 선언하고 호출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>숫자 입력 : 1 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>호출</em></p>
+<pre><code>digit(1);</code></pre>
+<p><em>출력</em></p>
+<pre><code>1 → 0001</code></pre>
+<p><em>입력</em></p>
+<blockquote>
+<p>숫자 입력 : 10 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>호출</em></p>
+<pre><code>digit(10);</code></pre>
+<p><em>출력</em></p>
+<pre><code>10 → 0010</code></pre>
+<p><em>입력</em></p>
+<blockquote>
+<p>숫자 입력 : 123 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>호출</em></p>
+<pre><code>digit(123);</code></pre>
+<p><em>출력</em></p>
+<pre><code>123 → 0123</code></pre>
+<p><em>입력</em></p>
+<blockquote>
+<p>숫자 입력 : 5341 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>호출</em></p>
+<pre><code>digit(5341);</code></pre>
+<p><em>출력</em></p>
+<pre><code>5341 → 5341</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>void digit(int)<br></li>
+</ul>
+<p><em>조건</em></p>
+<ul>
+<li>인자가 4자리 이상이면 그대로 출력한다.</li>
+</ul>
+<p><em>수업</em></p>
+<ul>
+<li><a href="http://211.63.89.31/class.php?BufferedReader" target="_blank"><i class="fab fa-slack-hash"></i> 사용자로부터 무언가를 입력받기(BufferedReader)</a></li>
+<li><a href="http://211.63.89.31/class.php?printf" target="_blank"><i class="fab fa-slack-hash"></i> 문자열 형식 출력하기</a></li>
+<li><a href="http://211.63.89.31/class.php?Method" target="_blank"><i class="fab fa-slack-hash"></i> 메소드 선언하기</a></li>
+</ul>
+<h2>요구사항.003</h2>
+<p>숫자를 2개 입력받아 산술 연산을 각각하는 메소드 5개를 선언하고 호출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>첫번째 숫자 : 5 <i class="far fa-keyboard"></i><br>
+두번째 숫자 : 3 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>호출</em></p>
+<pre><code>add(n1, n2);
+add(n1, n1);
+
+subtract(n1, n2);
+
+multiply(n1, n2);
+multiply(n1, n1);
+
+divide(n1, n2);
+
+mod(n1, n2);</code></pre>
+<p><em>출력</em></p>
+<pre><code>5 + 3 = 8 //add(n1, n2)
+5 + 5 = 10 //add(n1, n1)
+
+5 - 3 = 2 //subtract(n1, n2)
+
+5 * 3 = 15 //multiply(n1, n2)
+5 * 5 = 25 //multiply(n1, n1)
+
+5 / 3 = 1.7 //divide(n1, n2)
+
+5 % 3 = 2 //mod(n1, n2)</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>void add(int, int)<br></li>
+<li>void subtract(int, int)<br></li>
+<li>void multiply(int, int)<br></li>
+<li>void divide(int, int)<br></li>
+<li>void mod(int, int)<br></li>
+</ul>
+<p><em>수업</em></p>
+<ul>
+<li><a href="http://211.63.89.31/class.php?BufferedReader" target="_blank"><i class="fab fa-slack-hash"></i> 사용자로부터 무언가를 입력받기(BufferedReader)</a></li>
+<li><a href="http://211.63.89.31/class.php?printf" target="_blank"><i class="fab fa-slack-hash"></i> 문자열 형식 출력하기</a></li>
+<li><a href="http://211.63.89.31/class.php?Method" target="_blank"><i class="fab fa-slack-hash"></i> 메소드 선언하기</a></li>
+</ul>
+<h2>요구사항.004</h2>
+<p>아래의 코드를 참고해서 현재 시간을 출력하는 메소드 선언하고 호출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>없음</p>
+</blockquote>
+<p><em>호출</em></p>
+<pre><code>nowTime();</code></pre>
+<p><em>출력</em></p>
+<pre><code>현재 시간 : 10시 30분 25초</code></pre>
+<p><em>코드 참조</em></p>
+<pre><code>import java.util.Date;
+
+class Example 
+{
+    public static void main(String[] args) 
+    {
+        Date now = new Date();
+        System.out.printf("%d시 %d분 %d초\n", now.getHours(), now.getMinutes(), now.getSeconds());
+    }
+}</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>void nowTime()<br></li>
+</ul>
+<p><em>추가 조건</em></p>
+<ul>
+<li>현재 시간을 오전/오후로 출력하시오.<ul>
+<li>void nowTime_AMPM() </li>
+<li>14시 30분 25초 → 오후 2시 30분 25초</li>
+</ul>
+</li>
+</ul>
+<p><em>수업</em></p>
+<ul>
+<li><a href="http://211.63.89.31/class.php?BufferedReader" target="_blank"><i class="fab fa-slack-hash"></i> 사용자로부터 무언가를 입력받기(BufferedReader)</a></li>
+<li><a href="http://211.63.89.31/class.php?printf" target="_blank"><i class="fab fa-slack-hash"></i> 문자열 형식 출력하기</a></li>
+<li><a href="http://211.63.89.31/class.php?Method" target="_blank"><i class="fab fa-slack-hash"></i> 메소드 선언하기</a></li>
+</ul>
+<h2>요구사항.005</h2>
+<p>이름을 전달하면 이름뒤에 '님'을 붙여서 반환하는 메소드를 선언하고 호출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>이름 : 홍길동 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>호출</em></p>
+<pre><code>name = getName(name);
+System.out.printf("고객 : %s님\n", name);</code></pre>
+<p><em>출력</em></p>
+<pre><code>고객 : 홍길동님</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>String getName(String)<br><ul>
+<li>String : OOO(이름)</li>
+<li>return String : OOO(이름)님</li>
+</ul>
+</li>
+</ul>
+<p><em>수업</em></p>
+<ul>
+<li><a href="http://211.63.89.31/class.php?Method" target="_blank"><i class="fab fa-slack-hash"></i> 메소드 선언하기</a></li>
+</ul>
+<h2>요구사항.006</h2>
+<p>숫자를 2개 입력받아 산술 결과를 반환하는 메소드 5개를 선언하고 호출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>첫번째 숫자 : 5 <i class="far fa-keyboard"></i><br>
+두번째 숫자 : 3 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>호출</em></p>
+<pre><code>result = add(n1, n2); 
+System.out.println(result);
+result = add(n1, n1);
+System.out.println(result);
+
+result = subtract(n1, n2);
+System.out.println(result);
+
+result = multiply(n1, n2);
+System.out.println(result);
+result = multiply(n1, n1);
+System.out.println(result);
+
+result = divide(n1, n2);
+System.out.println(result);
+
+result = mod(n1, n2);
+System.out.println(result);</code></pre>
+<p><em>출력</em></p>
+<pre><code>8 //add(n1, n2)
+10 //add(n1, n1)
+
+2 //subtract(n1, n2)
+
+15 //multiply(n1, n2)
+25 //multiply(n1, n1)
+
+1.7 //divide(n1, n2)
+
+2 //mod(n1, n2)</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>int add(int, int)<br></li>
+<li>int subtract(int, int)<br></li>
+<li>int multiply(int, int)<br></li>
+<li>double divide(int, int)<br></li>
+<li>int mod(int, int)<br></li>
+</ul>
+<p><em>수업</em></p>
+<ul>
+<li><a href="http://211.63.89.31/class.php?Method" target="_blank"><i class="fab fa-slack-hash"></i> 메소드 선언하기</a></li>
+</ul>
+<h2>요구사항.007</h2>
+<p>숫자를 전달하면 '짝수' 혹은 '홀수' 라는 단어를 반환하는 메소드를 선언하고 호출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>숫자 : 5 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>입력하신 숫자 '5'는(은) '홀수'입니다.</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>String getNumber(int)<ul>
+<li>int : 숫자</li>
+<li>return String : '홀수' or '짝수'</li>
+</ul>
+</li>
+</ul>
+<p><em>수업</em></p>
+<ul>
+<li><a href="http://211.63.89.31/class.php?Method" target="_blank"><i class="fab fa-slack-hash"></i> 메소드 선언하기</a></li>
+</ul>
+<h2>요구사항.008</h2>
+<p>국어, 영어, 수학 점수를 전달하면 '합격' 혹은 '불합격'이라는 단어를 반환하는 메소드를 선언하고 호출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>국어 : 80 <i class="far fa-keyboard"></i><br>
+영어 : 75 <i class="far fa-keyboard"></i><br>
+수학 : 60 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>(불)합격입니다.</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>String test(int, int, int)<br><ul>
+<li>int, int, int : 국어, 영어, 수학</li>
+<li>return String : '합격' or '불합격'</li>
+</ul>
+</li>
+</ul>
+<p><em>조건</em></p>
+<ul>
+<li>평균 점수 60점 이상은 '합격'이다.</li>
+<li>평균 점수 60점 미만은 '불합격'이다.</li>
+</ul>
+<p><em>추가 조건</em></p>
+<ul>
+<li>과락 있음 → 한 과목 이상 40점 미만이면 불합격이다.</li>
+</ul>
+<p><em>수업</em></p>
+<ul>
+<li><a href="http://211.63.89.31/class.php?Method" target="_blank"><i class="fab fa-slack-hash"></i> 메소드 선언하기</a></li>
+</ul>
+<h2>요구사항.009</h2>
+<p>지하철 탑승 소요 시간을 구하시오. 지나가는 역의 개수, 환승역의 횟수 등을 전달 받아 총 걸리는 시간을  반환하는 메소드를 선언하고 호출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>역의 개수 : 15 <i class="far fa-keyboard"></i><br>
+환승역의 횟수 : 1 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>총 소요 시간은 33분입니다.</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>int getTime(int, int)<br></li>
+</ul>
+<p><em>조건</em></p>
+<ul>
+<li>각 역간의 소요 시간 : 2분<br></li>
+<li>환승역의 소요 시간 : 3분<br></li>
+</ul>
+<p><em>추가 조건</em></p>
+<ul>
+<li>시간대에 따라 환승 소요 시간을 달리하시오.<br><ul>
+<li>평상 : 3분<br></li>
+<li>출근 : 4분<br></li>
+<li>퇴근 : 5분<br></li>
+</ul>
+</li>
+</ul>
+<p><em>수업</em></p>
+<ul>
+<li><a href="http://211.63.89.31/class.php?Method" target="_blank"><i class="fab fa-slack-hash"></i> 메소드 선언하기</a></li>
+</ul>
+<h2>요구사항.010</h2>
+<p>사과 나무가 있다. 사과 나무 씨앗을 심을 날로부터 특정 시간이 흘렀을 때 사과 총 몇개가 열리는지 구하는 메소드를 선언하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>맑은 날 : 20 <i class="far fa-keyboard"></i><br>
+흐린 날 : 5 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>사과가 총 15개 열렸습니다.</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>int getApple(int, int)<br></li>
+</ul>
+<p><em>조건</em></p>
+<ul>
+<li>사과 나무를 처음 심었을 때 나무의 길이 : 0m<br></li>
+<li>맑은 날 사과 나무의 성장률 : 5㎝<br></li>
+<li>흐린 날 사과 나무의 성잘률 : 2㎝<br></li>
+<li>사과 나무는 길이가 1m 넘는 시점부터 사과가 열린다.<br></li>
+<li>1m 넘는 시점부터 10㎝ 자랄 때마다 사과가 1개씩 열린다.<br></li>
+</ul>
+<p><em>수업</em></p>
+<ul>
+<li><a href="http://211.63.89.31/class.php?Method" target="_blank"><i class="fab fa-slack-hash"></i> 메소드 선언하기</a></li>
+</ul>
+<h2>요구사항.011</h2>
+<p>인자로 받은 숫자들의 합을 구하는 메소드를 선언하고 호출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>없음</p>
+</blockquote>
+<p><em>호출</em></p>
+<pre><code>sum(10);</code></pre>
+<p><em>출력</em></p>
+<pre><code>10 = 10</code></pre>
+<p><em>호출</em></p>
+<pre><code>sum(10, 20);</code></pre>
+<p><em>출력</em></p>
+<pre><code>10 + 20 = 10</code></pre>
+<p><em>호출</em></p>
+<pre><code>sum(10, 20, 30);</code></pre>
+<p><em>출력</em></p>
+<pre><code>10 + 20 + 30 = 10</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>void sum(int)</li>
+<li>void sum(int, int)</li>
+<li>void sum(int, int, int)</li>
+<li>void sum(int, int, int, int)</li>
+<li>void sum(int, int, int, int, int)</li>
+</ul>
+<h2>요구사항.012</h2>
+<p>인자로 받은 이름들을 직급 순으로 출력하는 메소드를 선언하고 호출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>없음</p>
+</blockquote>
+<p><em>호출</em></p>
+<pre><code>position("홍길동");</code></pre>
+<p><em>출력</em></p>
+<pre><code>사원 : 홍길동</code></pre>
+<p><em>호출</em></p>
+<pre><code>position("홍길동", "유재석");</code></pre>
+<p><em>출력</em></p>
+<pre><code>사원 : 홍길동
+대리 : 유재석</code></pre>
+<p><em>호출</em></p>
+<pre><code>position("홍길동", "유재석", "박명수");</code></pre>
+<p><em>출력</em></p>
+<pre><code>사원 : 홍길동
+대리 : 유재석
+과장 : 박명수</code></pre>
+<p><em>호출</em></p>
+<pre><code>position("홍길동", "유재석", "박명수", "정형돈");</code></pre>
+<p><em>출력</em></p>
+<pre><code>사원 : 홍길동
+대리 : 유재석
+과장 : 박명수
+부장 : 정형돈</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>void position(String)</li>
+<li>void position(String, String)</li>
+<li>void position(String, String, String)</li>
+<li>void position(String, String, String, String)</li>
+</ul>
+<h2>요구사항.013</h2>
+<p>인자로 받은 숫자들 중 양수의 갯수를 반환하는 메소드를 선언하고 호출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>없음</p>
+</blockquote>
+<p><em>호출</em></p>
+<pre><code>int count = positive(10);</code></pre>
+<p><em>출력</em></p>
+<pre><code>양수 : 1개</code></pre>
+<p><em>호출</em></p>
+<pre><code>int count = positive(10, 20);</code></pre>
+<p><em>출력</em></p>
+<pre><code>양수 : 2개</code></pre>
+<p><em>호출</em></p>
+<pre><code>int count = positive(10, 20, -30);</code></pre>
+<p><em>출력</em></p>
+<pre><code>양수 : 2개</code></pre>
+<p><em>호출</em></p>
+<pre><code>int count = positive(10, 20, -30, 40);</code></pre>
+<p><em>출력</em></p>
+<pre><code>양수 : 3개</code></pre>
+<p><em>호출</em></p>
+<pre><code>int count = positive(10, 20, -30, 40, 50);</code></pre>
+<p><em>출력</em></p>
+<pre><code>양수 : 4개</code></pre>
+<p><em>메소드 서명</em></p>
+<ul>
+<li>int positive(int)</li>
+<li>int positive(int, int)</li>
+<li>int positive(int, int, int)</li>
+<li>int positive(int, int, int, int)</li>
+<li>int positive(int, int, int, int, int)</li>
+</ul>
+<!--
+## 요구사항.
+*입력*
+> 
+*출력*
+```
+```
+*조건*
+- 
+*추가 조건*
+- 
+--></div>			<style>
+				.datebar {
+					text-align: right;
+					border-top: 1px solid #ccc;
+					padding-right: 7px;
+					padding-top: 3px;
+					font-size: 12px;
+					margin: 0px auto;
+					margin-top: 30px;
+					margin-bottom: 100px;
+					color: #aaa;
+				}
+			</style>
+			<script>
+
+				$(".md.question h2").click(function () {
+					
+					var sTop = $(this).offset().top;
+					//alert(sTop);
+
+					$('html, body').animate({
+						scrollTop: sTop - 20
+					}, 500);
+
+				});
+
+				//요구사항 번호 매기기
+				var no = 1;
+				$(".md.question h2").each(function(index, item) {
+					$(item).text($(item).text() + setZero(no));
+					no+=1;
+				});
+
+				function setZero(num) {
+					if (num < 10) return "00" + num;
+					else if (num < 100) return "0" + num;
+					else "" + num;
+				}
+			</script>
+
+
+
+			<textarea id="sourcecopy" style="width: 10px; height: 10px; position: absolute; left: -10000px;"></textarea>
+			<script>
+				//소스 클립보드에 복사하기
+				$(".md.question pre").dblclick(function(evt) {
+					
+					if (evt.ctrlKey && evt.which == 1) {
+						//alert($(this).find("code").text());
+						$("#sourcecopy").val("");
+						$("#sourcecopy").val($(this).find("code").text()).select();
+						document.execCommand("copy");
+						//alert($("#sourcecopy").val());
+						alert('Source Copied');
+					}
+				});
+			</script>
+		</div>
+	</section>
+
+	<script>
+	
+	//가운데 구분선을 문서 높이와 맞추기 위한 작업
+	$("#main, #left, #right").height($(document).height() + 50);
+
+	//외부 링크를 _blank로 처리
+	$(".md a[href^=http").attr("target", "_blank");
+
+	//일부 링크를 _blank로 처리(Class로 이동)
+	$(".md a[href^='/class.php'").attr("target", "_blank");
+
+	//모든 링크에 아이콘 추가
+	$("md a").after('<i class="fas fa-link" style="font-size:.74rem;"></i>');
+
+</script>
+
+</body></html>
