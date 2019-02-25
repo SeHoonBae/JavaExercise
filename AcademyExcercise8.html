@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://211.63.89.31/question.php?008 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Class</title>
+
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="pinn">
+<link rel="stylesheet" href="./AcademyExcercise8_files/bootstrap.css">
+<link rel="stylesheet" href="./AcademyExcercise8_files/all.css">
+<link rel="stylesheet" href="./AcademyExcercise8_files/main.css">
+<script src="./AcademyExcercise8_files/jquery-3.3.1.min.js.다운로드"></script>
+<script src="./AcademyExcercise8_files/bootstrap.js.다운로드"></script>
+<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">-->
+<style>
+.qtable td { padding: 5px 10px; text-align: right; }
+
+.qtable .black, .qtable2 .black { background-color: #efefef; }
+.qtable .green, .qtable2 .green { background-color: #ddffee; }
+.qtable .red, .qtable2 .red { background-color: #ffe3e3; }
+.qtable2 td { padding: 2px 10px; text-align: center; }
+</style>
+
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+	
+<nav id="menu">
+	<ul id="menu1">			
+		<li><i class="fas fa-home"></i> <a href="http://211.63.89.31/" target="_top">Home</a> <span></span></li>
+		<div style="clear:both;"></div>
+	</ul>
+	<ul id="menu2">			
+		<li><i class="fas fa-chalkboard-teacher"></i> <a href="http://211.63.89.31/class.php" target="_top">Class.수업</a></li>
+		<li><i class="fas fa-volume-up"></i> <a href="http://211.63.89.31/notice.php" target="_top">Notice.알림</a></li>
+		<li><i class="fas fa-code"></i> <a href="http://211.63.89.31/question.php" target="_top">Question.문제</a></li>
+		<li><i class="far fa-file-alt"></i> <a href="http://211.63.89.31:8098/" target="_top">File.자료실</a></li>
+		<li><i class="far fa-bookmark"></i> <a href="http://211.63.89.31/bookmark.php" target="_top">Bookmark.즐겨찾기</a></li>
+		<!-- <li><i class="fas fa-search"></i> <a href="http://211.63.89.31/word.php" target="_top">Word.용어정리</a></li> -->
+		<!-- <li><i class="fas fa-map-marker-alt"></i> <a href="http://211.63.89.31/place.php" target="_top">Place.맛집</a></li> -->
+		<div style="clear:both;"></div>
+	</ul>
+	<div style="clear:both;"></div>
+</nav>
+	<section id="main" style="height: 3666px;">
+		<!-- 좌측 서브 영역 -->
+		<div id="left" style="height: 3716px;">
+			<i class="fas fa-code" id="lefticon" onclick="location.href=&#39;questionpick.php&#39;;"></i>
+			<div style="clear: both;" class="mdlist">
+				<div onclick="location.href=&quot;question.php?001&quot;;"><span class="no">001</span><span class="title">변수+자료형+데이터</span></div><div onclick="location.href=&quot;question.php?002&quot;;"><span class="no">002</span><span class="title">변수+자료형+형변환+입출력+연산자</span></div><div onclick="location.href=&quot;question.php?003&quot;;"><span class="no">003</span><span class="title">메소드</span></div><div onclick="location.href=&quot;question.php?004&quot;;"><span class="no">004</span><span class="title">날짜+시간</span></div><div onclick="location.href=&quot;question.php?005&quot;;"><span class="no">005</span><span class="title">제어문(조건문)</span></div><div onclick="location.href=&quot;question.php?006&quot;;"><span class="no">006</span><span class="title">제어문(반복문1)</span></div><div onclick="location.href=&quot;question.php?007&quot;;"><span class="no">007</span><span class="title">제어문(반복문2)</span></div><div onclick="location.href=&quot;question.php?008&quot;;" class="now"><span class="no">008</span><span class="title">문자열</span></div><div onclick="location.href=&quot;question.php?009&quot;;"><span class="no">009</span><span class="title">배열(1차원)</span></div><div onclick="location.href=&quot;question.php?010&quot;;"><span class="no">010</span><span class="title">배열(2차원)</span></div><div onclick="location.href=&quot;question.php?011&quot;;"><span class="no">011</span><span class="title">클래스</span></div><div onclick="location.href=&quot;question.php?012&quot;;"><span class="no">012</span><span class="title">클래스(static)</span></div><div onclick="location.href=&quot;question.php?013&quot;;"><span class="no">013</span><span class="title">클래스(생성자)</span></div>			</div>
+			<style>
+				.mdlist {
+					font-size: 14px;
+					margin-top: 100px;
+					padding-left: 15px;
+					text-align: right;
+				}
+
+				.mdlist div {
+					cursor: pointer;
+					opacity: .5;
+				}
+
+				.mdlist div.now {
+					opacity: 1;
+				}
+
+				.mdlist .no {
+					color: cornflowerblue;
+					margin-right: 5px;
+				}
+
+				.mdlist .title {
+					font-size: 14px;
+				}
+			</style>
+		</div>
+		<!-- 우측 메인 영역 -->
+		<div id="right" style="height: 3716px;">
+			<div class="md question"><h1>문자열</h1>
+<h2>요구사항.001</h2>
+<p>문장을 입력받아 역순으로 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>문장 입력 : 안녕하세요. 홍길동입니다. <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>역순 결과 : .다니입동길홍 .요세하녕안</code></pre>
+<h2>요구사항.002</h2>
+<p>이메일 주소를 입력받아 아이디와 도메인을 각각 추출하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>이메일 : hong@gmail.com <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>아이디 : hong
+도메일 : gmail.com</code></pre>
+<h2>요구사항.003</h2>
+<p>숫자를 입력받아 자릿수와 상관없이 모든 수의 합을 구하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>숫자 : 314 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>결과 : 3 + 1 + 4 = 8</code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>산술연산자로 작성하지 마시오.(369 방식 사용 금지)</li>
+<li>자릿수의 길이는 제한 없음.</li>
+</ul>
+<h2>요구사항.004</h2>
+<p>파일명 10개를 입력받아 각 확장자별로 총 개수를 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>파일명 : dog.gif  <i class="far fa-keyboard"></i><br>
+파일명 : cat.jpg <i class="far fa-keyboard"></i><br>
+..<br>
+파일명 : 이력서.hwp  <i class="far fa-keyboard"></i><br>
+파일명 : 출금내역.doc <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>gif : 1개
+jpg : 2개
+png : 1개
+hwp : 4개
+doc : 2개</code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>확장자는 다음으로 제한한다.(gif, jpg, png, hwp, doc)</li>
+</ul>
+<h2>요구사항.005</h2>
+<p>숫자를 입력받아 3자리마다 , 를 붙이시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>숫자 : 1234567 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>결과 : 1,234,567</code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>%,d 사용하지 마시오.</li>
+</ul>
+<h2>요구사항.006</h2>
+<p>주어진 문자열에서 (사이의)공백을 제거 후 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>없음</p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>원본 문자열 : "    하나    둘    셋    "
+결과 문자열 : "    하나둘셋    "</code></pre>
+<h2>요구사항.007</h2>
+<p>영어 단어를 1개 입력받아 아래와 같이 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>단어 : StudentName <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>결과 : Student Name</code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>입력은 파스칼 표기법으로 한다.</li>
+<li>출력은 각 단어를 공백으로 구분한다.</li>
+</ul>
+<h2>요구사항.008</h2>
+<p>특정 단어가 문장내에 몇회 있어있는지 수를 세시오. </p>
+<p><em>입력</em></p>
+<blockquote>
+<p>없음</p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>'길동'을 총 2회 발견했습니다.</code></pre>
+<p><em>조건</em></p>
+<pre><code>String content = "안녕~ 길동아~ 잘가~ 길동아~";
+String word = "길동";</code></pre>
+<h2>요구사항.009</h2>
+<p>주민 등록 번호 유효성 검사를 하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>주민등록번호 : 951220-1021547 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>올바른(올바르지 않은) 주민등록번호입니다.</code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>'-' 입력 유무 상관없이 검사</li>
+</ul>
+<!--
+## 요구사항.
+*입력*
+> 
+*출력*
+```
+```
+*조건*
+- 
+*추가 조건*
+- 
+--></div>			<style>
+				.datebar {
+					text-align: right;
+					border-top: 1px solid #ccc;
+					padding-right: 7px;
+					padding-top: 3px;
+					font-size: 12px;
+					margin: 0px auto;
+					margin-top: 30px;
+					margin-bottom: 100px;
+					color: #aaa;
+				}
+			</style>
+			<script>
+
+				$(".md.question h2").click(function () {
+					
+					var sTop = $(this).offset().top;
+					//alert(sTop);
+
+					$('html, body').animate({
+						scrollTop: sTop - 20
+					}, 500);
+
+				});
+
+				//요구사항 번호 매기기
+				var no = 1;
+				$(".md.question h2").each(function(index, item) {
+					$(item).text($(item).text() + setZero(no));
+					no+=1;
+				});
+
+				function setZero(num) {
+					if (num < 10) return "00" + num;
+					else if (num < 100) return "0" + num;
+					else "" + num;
+				}
+			</script>
+
+
+
+			<textarea id="sourcecopy" style="width: 10px; height: 10px; position: absolute; left: -10000px;"></textarea>
+			<script>
+				//소스 클립보드에 복사하기
+				$(".md.question pre").dblclick(function(evt) {
+					
+					if (evt.ctrlKey && evt.which == 1) {
+						//alert($(this).find("code").text());
+						$("#sourcecopy").val("");
+						$("#sourcecopy").val($(this).find("code").text()).select();
+						document.execCommand("copy");
+						//alert($("#sourcecopy").val());
+						alert('Source Copied');
+					}
+				});
+			</script>
+		</div>
+	</section>
+
+	<script>
+	
+	//가운데 구분선을 문서 높이와 맞추기 위한 작업
+	$("#main, #left, #right").height($(document).height() + 50);
+
+	//외부 링크를 _blank로 처리
+	$(".md a[href^=http").attr("target", "_blank");
+
+	//일부 링크를 _blank로 처리(Class로 이동)
+	$(".md a[href^='/class.php'").attr("target", "_blank");
+
+	//모든 링크에 아이콘 추가
+	$("md a").after('<i class="fas fa-link" style="font-size:.74rem;"></i>');
+
+</script>
+
+</body></html>
