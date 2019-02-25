@@ -1,6 +1,6 @@
-class Ex08_Variable_배세훈 {
+class Ex08_Variable {
 	public static void main(String[] args) {
-		
+
 		int phoneCapacity=32;
 		int mouseDpi=1600;
 		int bookPrice=30000;
@@ -11,7 +11,7 @@ class Ex08_Variable_배세훈 {
 		int mathScore=90;
 		int scienceScore=80;
 		int korScore=70;
-	
+
 		System.out.println("제 휴대폰 용량은"+phoneCapacity+"입니다.");
 		System.out.println("제 마우스 DPI는"+mouseDpi+"입니다.");
 		System.out.println("책 가격은"+bookPrice+"입니다.");
