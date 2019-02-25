@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://211.63.89.31/question.php?011 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Class</title>
+
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="pinn">
+<link rel="stylesheet" href="./AcademyExcercise11_files/bootstrap.css">
+<link rel="stylesheet" href="./AcademyExcercise11_files/all.css">
+<link rel="stylesheet" href="./AcademyExcercise11_files/main.css">
+<script src="./AcademyExcercise11_files/jquery-3.3.1.min.js.다운로드"></script>
+<script src="./AcademyExcercise11_files/bootstrap.js.다운로드"></script>
+<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">-->
+<style>
+.qtable td { padding: 5px 10px; text-align: right; }
+
+.qtable .black, .qtable2 .black { background-color: #efefef; }
+.qtable .green, .qtable2 .green { background-color: #ddffee; }
+.qtable .red, .qtable2 .red { background-color: #ffe3e3; }
+.qtable2 td { padding: 2px 10px; text-align: center; }
+</style>
+
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+	
+<nav id="menu">
+	<ul id="menu1">			
+		<li><i class="fas fa-home"></i> <a href="http://211.63.89.31/" target="_top">Home</a> <span></span></li>
+		<div style="clear:both;"></div>
+	</ul>
+	<ul id="menu2">			
+		<li><i class="fas fa-chalkboard-teacher"></i> <a href="http://211.63.89.31/class.php" target="_top">Class.수업</a></li>
+		<li><i class="fas fa-volume-up"></i> <a href="http://211.63.89.31/notice.php" target="_top">Notice.알림</a></li>
+		<li><i class="fas fa-code"></i> <a href="http://211.63.89.31/question.php" target="_top">Question.문제</a></li>
+		<li><i class="far fa-file-alt"></i> <a href="http://211.63.89.31:8098/" target="_top">File.자료실</a></li>
+		<li><i class="far fa-bookmark"></i> <a href="http://211.63.89.31/bookmark.php" target="_top">Bookmark.즐겨찾기</a></li>
+		<!-- <li><i class="fas fa-search"></i> <a href="http://211.63.89.31/word.php" target="_top">Word.용어정리</a></li> -->
+		<!-- <li><i class="fas fa-map-marker-alt"></i> <a href="http://211.63.89.31/place.php" target="_top">Place.맛집</a></li> -->
+		<div style="clear:both;"></div>
+	</ul>
+	<div style="clear:both;"></div>
+</nav>
+	<section id="main" style="height: 4603px;">
+		<!-- 좌측 서브 영역 -->
+		<div id="left" style="height: 4653px;">
+			<i class="fas fa-code" id="lefticon" onclick="location.href=&#39;questionpick.php&#39;;"></i>
+			<div style="clear: both;" class="mdlist">
+				<div onclick="location.href=&quot;question.php?001&quot;;"><span class="no">001</span><span class="title">변수+자료형+데이터</span></div><div onclick="location.href=&quot;question.php?002&quot;;"><span class="no">002</span><span class="title">변수+자료형+형변환+입출력+연산자</span></div><div onclick="location.href=&quot;question.php?003&quot;;"><span class="no">003</span><span class="title">메소드</span></div><div onclick="location.href=&quot;question.php?004&quot;;"><span class="no">004</span><span class="title">날짜+시간</span></div><div onclick="location.href=&quot;question.php?005&quot;;"><span class="no">005</span><span class="title">제어문(조건문)</span></div><div onclick="location.href=&quot;question.php?006&quot;;"><span class="no">006</span><span class="title">제어문(반복문1)</span></div><div onclick="location.href=&quot;question.php?007&quot;;"><span class="no">007</span><span class="title">제어문(반복문2)</span></div><div onclick="location.href=&quot;question.php?008&quot;;"><span class="no">008</span><span class="title">문자열</span></div><div onclick="location.href=&quot;question.php?009&quot;;"><span class="no">009</span><span class="title">배열(1차원)</span></div><div onclick="location.href=&quot;question.php?010&quot;;"><span class="no">010</span><span class="title">배열(2차원)</span></div><div onclick="location.href=&quot;question.php?011&quot;;" class="now"><span class="no">011</span><span class="title">클래스</span></div><div onclick="location.href=&quot;question.php?012&quot;;"><span class="no">012</span><span class="title">클래스(static)</span></div><div onclick="location.href=&quot;question.php?013&quot;;"><span class="no">013</span><span class="title">클래스(생성자)</span></div>			</div>
+			<style>
+				.mdlist {
+					font-size: 14px;
+					margin-top: 100px;
+					padding-left: 15px;
+					text-align: right;
+				}
+
+				.mdlist div {
+					cursor: pointer;
+					opacity: .5;
+				}
+
+				.mdlist div.now {
+					opacity: 1;
+				}
+
+				.mdlist .no {
+					color: cornflowerblue;
+					margin-right: 5px;
+				}
+
+				.mdlist .title {
+					font-size: 14px;
+				}
+			</style>
+		</div>
+		<!-- 우측 메인 영역 -->
+		<div id="right" style="height: 4653px;">
+			<div class="md question"><h1>클래스</h1>
+<h2>요구사항.001</h2>
+<p>Book 클래스를 설계하시오.</p>
+<p><em>조건</em></p>
+<ul>
+<li>Book 객체의 정보<ul>
+<li>제목, 가격, 저자, 출판사, 발행년도, ISBN, 페이지수</li>
+</ul>
+</li>
+<li>모든 멤버 변수의 접근 지정자는 private으로 한다.</li>
+<li>멤버 접근을 위한 Setter와 Getter를 정의한다.<ul>
+<li>제목 : 읽기/쓰기, 최대 50자 이내(한글, 영어, 숫자)</li>
+<li>가격 : 읽기/쓰기, 0 ~ 100000원</li>
+<li>저자 : 읽기/쓰기</li>
+<li>출판사 : 쓰기 전용</li>
+<li>출판사 : 쓰기 전용</li>
+<li>발행년도 : 읽기 전용(2018년)</li>
+<li>ISBN : 읽기/쓰기</li>
+<li>페이지수 : 읽기 전용</li>
+</ul>
+</li>
+<li>Book 객체의 정보를 확인하기 위한 메소드를 구현한다.<ul>
+<li>String info()</li>
+</ul>
+</li>
+<li>클래스가 잘 설계되었는지 객체를 가지고 사용해본다.<ul>
+<li>Book 객체 생성 → 값 넣기 + 값 출력 등</li>
+</ul>
+</li>
+</ul>
+<h2>요구사항.002</h2>
+<p>Note 클래스를 설계하시오.</p>
+<p><em>조건</em></p>
+<ul>
+<li>Note 객체의 정보<ul>
+<li>크기, 표지 색상, 페이지수, 소유자이름, 가격</li>
+</ul>
+</li>
+<li>모든 멤버 변수의 접근 지정자는 private으로 한다.</li>
+<li>멤버 접근을 위한 Setter와 Getter를 정의한다.<ul>
+<li>크기 : 쓰기 전용, A3, A4, A5, B3, B4, B5</li>
+<li>표지 색상 : 쓰기 전용, 검정색, 흰색, 노란색, 파란색</li>
+<li>페이지수 : 쓰기 전용, 10 ~ 200페이지 이내
+(+) 10~50(얇다), 51 ~ 100(보통), 101 ~ 200(두껍다)</li>
+<li>소유자이름 : 쓰기 전용, 한글 2~5자이내. 필수값</li>
+<li>가격 : Setter,Getter 구현 안함
+(+) 기본 노트 가격(500원) = A5 + 흰색 + 10페이지
+(+) A3(+400원), A4(+200원), B3(+500원), B4(+300원), B5(+100원)
+(+) 검정색(+100원), 노란색(+200원), 파란색(+200원)
+(+) 페이지 당 x 10원 추가</li>
+</ul>
+</li>
+<li>Note 객체의 정보를 확인하기 위한 메소드를 구현한다.<ul>
+<li>String info()</li>
+</ul>
+</li>
+<li>Note가 잘 설계되었는지 객체를 가지고 사용해본다.<ul>
+<li>Note 객체 생성 → 값 넣기 + 값 출력 등</li>
+</ul>
+</li>
+</ul>
+<p><em>코드</em></p>
+<pre><code>Note note = new Note();
+note.setSize("B4");
+note.setColor("노란색");
+note.setPage(25);
+note.setOwner("홍길동");
+note.info();
+
+Note note2 = new Note();
+note2.setSize("A4");
+note2.setColor("검정색");
+note2.setPage(100);
+note2.info();</code></pre>
+<p><em>출력</em></p>
+<pre><code>■■■■■■ 노트 정보 ■■■■■■
+소유자 : 홍길동
+특성 : 노란색 얇은 B4노트
+가격 : 1,150원
+■■■■■■■■■■■■■■■■■■■■■■
+
+■■■■■■ 노트 정보 ■■■■■■
+주인 없는 노트
+■■■■■■■■■■■■■■■■■■■■■■</code></pre>
+<h2>요구사항.003</h2>
+<p>과자(Bugles) 클래스를 설계하시오.</p>
+<p><em>조건</em></p>
+<ul>
+<li>Bugles 객체의 정보<ul>
+<li>가격, 용량, 생산일자, 유통기한</li>
+</ul>
+</li>
+<li>모든 멤버 변수의 접근 지정자는 private으로 한다.</li>
+<li>멤버 접근을 위한 Setter와 Getter를 정의한다.<ul>
+<li>용량 : 쓰기 전용, 300g, 500g, 850g</li>
+<li>가격 : 읽기 전용, 850원(300g), 1200원(500g), 1950원(850g)</li>
+<li>생산일자 : 쓰기 전용(Calendar)</li>
+<li>유통기한 : 읽기 전용, 양의 정수, 7일(300g), 10일(500g), 15일(850g)</li>
+</ul>
+</li>
+<li>Bugles 객체 메소드<ul>
+<li>String eat() : 과자 먹기 메소드</li>
+</ul>
+</li>
+</ul>
+<p><em>코드</em></p>
+<pre><code>Bugles snack = new Bugles();
+snack.setSize(500);
+snack.setCreationTime("2018-07-15");
+System.out.println("가격 : " + snack.getPrice() + "원");
+System.out.println("유통 기한이 " + snack.getExpiration() + "일 남았습니다.");
+snack.eat();
+
+Bugles snack2 = new Bugles();
+snack2.setSize(300);
+snack2.setCreationTime("2018-07-01");
+System.out.println("가격 : " + snack2.getPrice() + "원");
+System.out.println("유통 기한이 " + snack2.getExpiration() + "일 남았습니다.");
+snack2.eat();</code></pre>
+<p><em>출력</em></p>
+<pre><code>가격 : 1,200원
+유통기한 : 5일 남았습니다.
+과자를 맛있게 먹습니다.
+
+가격 : 850원
+유통 기한이 -11일 남았습니다.
+유통기한이 지나 먹을 수 없습니다.</code></pre>
+<h2>요구사항.004</h2>
+<p>Box 클래스와 Macaron 클래스를 설계하시오.</p>
+<p><em>조건</em></p>
+<ul>
+<li>Box 객체의 정보<ul>
+<li>1Box에는 10개의 마카롱을 담을 수 있다.(멤버 변수 = Macaron 배열)</li>
+</ul>
+</li>
+<li>Box 객체의 사용<ul>
+<li>Box 객체를 생성시 Box에 마카롱 객체를 10개 담는다.(무작위)</li>
+<li>품질 검사에 통과하지 못하는 마카롱을 구분한다.</li>
+</ul>
+</li>
+<li>Macaron 객체의 정보<ul>
+<li>생산 크기(5cm ~ 15cm) → 판매 유효 크기(8cm ~ 14cm)</li>
+<li>생산 색상(red, blue, yellow, white, pink, purple, green, black) → 판매 유효 색상(black을 제외한 모든 색상)</li>
+<li>생산 샌드 두께(1mm ~ 20mm) → 판매 유효 두께(3mm ~ 18mm)</li>
+</ul>
+</li>
+</ul>
+<p><em>코드</em></p>
+<pre><code>Box box1 = new Box();
+box1.cook();
+box1.check();
+box1.list();</code></pre>
+<p><em>출력</em></p>
+<pre><code>마카롱을 10개 만들었습니다. //box1.cook();
+[박스 체크 결과] //box1.check();
+QC 합격 개수 : 8개
+QC 불합격 개수 : 2개
+[마카롱 목록] //box1.list();
+1번 마카롱 : 10cm(red, 5mm) : 합격
+2번 마카롱 : 12cm(blue, 12mm) : 합격
+..
+9번 마카롱 : 13cm(yellow, 2mm) : 불합격
+10번 마카롱 : 10cm(black, 6mm) : 불합격</code></pre>
+<h2>요구사항.005</h2>
+<p>Refrigerator 클래스와 Item 클래스를 설계하시오.</p>
+<p><em>조건</em></p>
+<ul>
+<li>Refrigerator 객체의 정보<ul>
+<li>Item을 최대 100개까지 담을 수 있다.(멤버 변수 = Item 배열)</li>
+</ul>
+</li>
+<li>Refrigerator 객체의 사용<ul>
+<li>Item을 냉장고에 넣는다. void add(Item item);</li>
+<li>Item을 냉장고에서 꺼낸다. Item get(String name);</li>
+<li>냉장고에 있는 Item의 개수를 확인한다. int count();</li>
+<li>냉장고에 있는 Item을 확인한다. void listItem();</li>
+</ul>
+</li>
+<li>Item 객체의 정보<ul>
+<li>식품명, 유통기한</li>
+</ul>
+</li>
+</ul>
+<p><em>코드</em></p>
+<pre><code>Refrigerator r = new Refrigerator();
+
+Item item1 = new Item();
+item1.setName("김치");
+item1.setExpiration("2018-08-30");
+r.add(item1);
+Item item2 = new Item();
+item2.setName("깍두기");
+item2.setExpiration("2018-08-15");
+r.add(item2);
+Item item3 = new Item();
+item3.setName("멸치볶음");
+item3.setExpiration("2018-07-31");
+r.add(item3);
+
+Item item4 = r.get("깍두기");
+System.out.printf("%s의 유통기한 : %s\n", item4.getName(), item4.getExpiration());
+
+System.out.printf("냉장고 안의 총 아이템 개수 : %d개\n", r.count());
+
+r.listItem();</code></pre>
+<p><em>출력</em></p>
+<pre><code>'김치'를 냉장고에 넣었습니다. //r.add(item1);
+'깍두기'를 냉장고에 넣었습니다. //r.add(item2);
+'멸치볶음'를 냉장고에 넣었습니다. //r.add(item3);
+깍두기의 유통기한 : 2018-08-15
+냉장고 안의 총 아이템 개수 : 3개
+[냉장고 아이템 목록] //r.listItem();
+김치(2018-08-30) 
+깍두기(2018-08-15)
+멸치볶음(2018-07-31)</code></pre>
+<!--
+## 요구사항.
+*입력*
+> 
+*출력*
+```
+```
+*조건*
+- 
+*추가 조건*
+- 
+--></div>			<style>
+				.datebar {
+					text-align: right;
+					border-top: 1px solid #ccc;
+					padding-right: 7px;
+					padding-top: 3px;
+					font-size: 12px;
+					margin: 0px auto;
+					margin-top: 30px;
+					margin-bottom: 100px;
+					color: #aaa;
+				}
+			</style>
+			<script>
+
+				$(".md.question h2").click(function () {
+					
+					var sTop = $(this).offset().top;
+					//alert(sTop);
+
+					$('html, body').animate({
+						scrollTop: sTop - 20
+					}, 500);
+
+				});
+
+				//요구사항 번호 매기기
+				var no = 1;
+				$(".md.question h2").each(function(index, item) {
+					$(item).text($(item).text() + setZero(no));
+					no+=1;
+				});
+
+				function setZero(num) {
+					if (num < 10) return "00" + num;
+					else if (num < 100) return "0" + num;
+					else "" + num;
+				}
+			</script>
+
+
+
+			<textarea id="sourcecopy" style="width: 10px; height: 10px; position: absolute; left: -10000px;"></textarea>
+			<script>
+				//소스 클립보드에 복사하기
+				$(".md.question pre").dblclick(function(evt) {
+					
+					if (evt.ctrlKey && evt.which == 1) {
+						//alert($(this).find("code").text());
+						$("#sourcecopy").val("");
+						$("#sourcecopy").val($(this).find("code").text()).select();
+						document.execCommand("copy");
+						//alert($("#sourcecopy").val());
+						alert('Source Copied');
+					}
+				});
+			</script>
+		</div>
+	</section>
+
+	<script>
+	
+	//가운데 구분선을 문서 높이와 맞추기 위한 작업
+	$("#main, #left, #right").height($(document).height() + 50);
+
+	//외부 링크를 _blank로 처리
+	$(".md a[href^=http").attr("target", "_blank");
+
+	//일부 링크를 _blank로 처리(Class로 이동)
+	$(".md a[href^='/class.php'").attr("target", "_blank");
+
+	//모든 링크에 아이콘 추가
+	$("md a").after('<i class="fas fa-link" style="font-size:.74rem;"></i>');
+
+</script>
+
+</body></html>
