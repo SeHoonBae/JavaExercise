@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://211.63.89.31/question.php?005 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Class</title>
+
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="pinn">
+<link rel="stylesheet" href="./AcademyExcercise5_files/bootstrap.css">
+<link rel="stylesheet" href="./AcademyExcercise5_files/all.css">
+<link rel="stylesheet" href="./AcademyExcercise5_files/main.css">
+<script src="./AcademyExcercise5_files/jquery-3.3.1.min.js.다운로드"></script>
+<script src="./AcademyExcercise5_files/bootstrap.js.다운로드"></script>
+<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">-->
+<style>
+.qtable td { padding: 5px 10px; text-align: right; }
+
+.qtable .black, .qtable2 .black { background-color: #efefef; }
+.qtable .green, .qtable2 .green { background-color: #ddffee; }
+.qtable .red, .qtable2 .red { background-color: #ffe3e3; }
+.qtable2 td { padding: 2px 10px; text-align: center; }
+</style>
+
+</head>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+
+	
+<nav id="menu">
+	<ul id="menu1">			
+		<li><i class="fas fa-home"></i> <a href="http://211.63.89.31/" target="_top">Home</a> <span></span></li>
+		<div style="clear:both;"></div>
+	</ul>
+	<ul id="menu2">			
+		<li><i class="fas fa-chalkboard-teacher"></i> <a href="http://211.63.89.31/class.php" target="_top">Class.수업</a></li>
+		<li><i class="fas fa-volume-up"></i> <a href="http://211.63.89.31/notice.php" target="_top">Notice.알림</a></li>
+		<li><i class="fas fa-code"></i> <a href="http://211.63.89.31/question.php" target="_top">Question.문제</a></li>
+		<li><i class="far fa-file-alt"></i> <a href="http://211.63.89.31:8098/" target="_top">File.자료실</a></li>
+		<li><i class="far fa-bookmark"></i> <a href="http://211.63.89.31/bookmark.php" target="_top">Bookmark.즐겨찾기</a></li>
+		<!-- <li><i class="fas fa-search"></i> <a href="http://211.63.89.31/word.php" target="_top">Word.용어정리</a></li> -->
+		<!-- <li><i class="fas fa-map-marker-alt"></i> <a href="http://211.63.89.31/place.php" target="_top">Place.맛집</a></li> -->
+		<div style="clear:both;"></div>
+	</ul>
+	<div style="clear:both;"></div>
+</nav>
+	<section id="main" style="height: 5423px;">
+		<!-- 좌측 서브 영역 -->
+		<div id="left" style="height: 5473px;">
+			<i class="fas fa-code" id="lefticon" onclick="location.href=&#39;questionpick.php&#39;;"></i>
+			<div style="clear: both;" class="mdlist">
+				<div onclick="location.href=&quot;question.php?001&quot;;"><span class="no">001</span><span class="title">변수+자료형+데이터</span></div><div onclick="location.href=&quot;question.php?002&quot;;"><span class="no">002</span><span class="title">변수+자료형+형변환+입출력+연산자</span></div><div onclick="location.href=&quot;question.php?003&quot;;"><span class="no">003</span><span class="title">메소드</span></div><div onclick="location.href=&quot;question.php?004&quot;;"><span class="no">004</span><span class="title">날짜+시간</span></div><div onclick="location.href=&quot;question.php?005&quot;;" class="now"><span class="no">005</span><span class="title">제어문(조건문)</span></div><div onclick="location.href=&quot;question.php?006&quot;;"><span class="no">006</span><span class="title">제어문(반복문1)</span></div><div onclick="location.href=&quot;question.php?007&quot;;"><span class="no">007</span><span class="title">제어문(반복문2)</span></div><div onclick="location.href=&quot;question.php?008&quot;;"><span class="no">008</span><span class="title">문자열</span></div><div onclick="location.href=&quot;question.php?009&quot;;"><span class="no">009</span><span class="title">배열(1차원)</span></div><div onclick="location.href=&quot;question.php?010&quot;;"><span class="no">010</span><span class="title">배열(2차원)</span></div><div onclick="location.href=&quot;question.php?011&quot;;"><span class="no">011</span><span class="title">클래스</span></div><div onclick="location.href=&quot;question.php?012&quot;;"><span class="no">012</span><span class="title">클래스(static)</span></div><div onclick="location.href=&quot;question.php?013&quot;;"><span class="no">013</span><span class="title">클래스(생성자)</span></div>			</div>
+			<style>
+				.mdlist {
+					font-size: 14px;
+					margin-top: 100px;
+					padding-left: 15px;
+					text-align: right;
+				}
+
+				.mdlist div {
+					cursor: pointer;
+					opacity: .5;
+				}
+
+				.mdlist div.now {
+					opacity: 1;
+				}
+
+				.mdlist .no {
+					color: cornflowerblue;
+					margin-right: 5px;
+				}
+
+				.mdlist .title {
+					font-size: 14px;
+				}
+			</style>
+		</div>
+		<!-- 우측 메인 영역 -->
+		<div id="right" style="height: 5473px;">
+			<div class="md question"><h1>제어문(조건문)</h1>
+<h2>요구사항.001</h2>
+<p>숫자 2개를 입력받아 큰수와 작은수를 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>첫번째 숫자 : 5 <i class="far fa-keyboard"></i><br>
+첫번째 숫자 : 3 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>큰수는 5이고, 작은수는 3입니다.</code></pre>
+<p><em>추가조건</em></p>
+<ul>
+<li>두숫자가 얼마의 차이를 보이는지 출력하시오.<ul>
+<li>입력한 두 숫자는 2가 차이납니다.</li>
+</ul>
+</li>
+</ul>
+<h2>요구사항.002</h2>
+<p>학생의 국어 점수를 입력받아 성적을 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>점수 : 85 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>입력한 85점은 성적 B입니다.</code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>90 ~ 100 : A</li>
+<li>80 ~ 89 : B</li>
+<li>70 ~ 79 : C</li>
+<li>60 ~ 69 : D</li>
+<li>0 ~ 59 : F</li>
+</ul>
+<p><em>추가</em></p>
+<ul>
+<li>유효성 검사(점수 : 0 ~ 100점 이내)</li>
+</ul>
+<h2>요구사항.003</h2>
+<p>숫자 2개와 연산자 1개를 입력받아 연산 과정과 결과를 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>첫번째 숫자 : 5 <i class="far fa-keyboard"></i><br>
+두번째 숫자 : 3 <i class="far fa-keyboard"></i><br>
+연산자 : * <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>5 * 3 = 15</code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>정수만 입력하시오.<br></li>
+<li>연산 결과는 소수이하가 생기면 첫째자리까지 출력 하시오.<br></li>
+<li>연산자는 산술 연산자만 입력하시오.<br></li>
+</ul>
+<h2>요구사항.004</h2>
+<p>문자 1개를 입력받아 아래와 같이 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>문자 : f  <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>Father</code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>f, F → Father</li>
+<li>m, M → Mother</li>
+<li>s, S → Sister</li>
+<li>b, B → Brother</li>
+</ul>
+<h2>요구사항.005</h2>
+<p>영문자 1개를 입력받아 대/소문자 변환을 한 뒤 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>문자 : a <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>결과 : A</code></pre>
+<p><em>입력</em></p>
+<blockquote>
+<p>문자 : F <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>결과 : f</code></pre>
+<h2>요구사항.006</h2>
+<p>숫자 5개를 입력받아 짝수와 홀수의 개수를 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>숫자 입력 : 3 <i class="far fa-keyboard"></i><br>
+숫자 입력 : 2 <i class="far fa-keyboard"></i><br>
+숫자 입력 : 7 <i class="far fa-keyboard"></i><br>
+숫자 입력 : 1 <i class="far fa-keyboard"></i><br>
+숫자 입력 : 8 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>짝수는 2개 홀수는 3개 입력했습니다.
+홀수가 짝수보다 1개 더 많습니다.</code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>1 ~ 10 사이의 정수만 입력받으시오.</li>
+</ul>
+<p><em>추가조건</em></p>
+<ul>
+<li>입력받는 숫자를 한글로 바꾸시오.<ul>
+<li>1 → 하나</li>
+<li>2 → 둘</li>
+<li>3 → 셋</li>
+<li>4 → 넷</li>
+<li>5 → 다섯</li>
+<li>6 → 여섯</li>
+<li>7 → 일곱</li>
+<li>8 → 여덟</li>
+<li>9 → 아홉</li>
+<li>10 → 열</li>
+</ul>
+</li>
+</ul>
+<h2>요구사항.007</h2>
+<p>주차 요금을 계산하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>[들어온 시간]<br>
+시 : 13 <i class="far fa-keyboard"></i><br>
+분 : 30 <i class="far fa-keyboard"></i><br>
+[나간 시간]<br>
+시 : 14 <i class="far fa-keyboard"></i><br>
+분 : 20 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>주차 요금은 4,000원입니다.</code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>무료 주차 : 30분</li>
+<li>초과 10분당 : 2,000원</li>
+<li>Calendar를 사용해서 한번 풀고, 사용하지 말고 한번 푸시오.</li>
+</ul>
+<h2>요구사항.008</h2>
+<p>년도를 입력받아 해당 년도가 '평년' 인지 '윤년' 인지 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>년도 입력 : 2019 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>2019년은 '평년'입니다.</code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>a. 년도를 4로 나눈다.<ul>
+<li>떨어지면 b 검사</li>
+<li>떨어지지 않으면 "평년"</li>
+</ul>
+</li>
+<li>b. 년도를 100으로 나눈다.<ul>
+<li>떨어지면 c 검사</li>
+<li>떨어지지 않으면 "윤년"</li>
+</ul>
+</li>
+<li>c. 년도를 400으로 나눈다.<ul>
+<li>떨어지면 "윤년"</li>
+<li>떨어지지 않으면 "평년"</li>
+</ul>
+</li>
+<li>Calendar, Date 클래스 사용 금지</li>
+</ul>
+<h2>요구사항.009</h2>
+<p>날짜를 입력받아 아래의 조건에 맞게 결과를 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>년 : 2019 <i class="far fa-keyboard"></i><br>
+월 : 2 <i class="far fa-keyboard"></i><br>
+일 : 11 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>입력하신 날짜는 '평일'입니다.
+해당 주의 토요일로 이동합니다.
+이동한 날짜는 '2019-02-16' 입니다.</code></pre>
+<p><em>입력</em></p>
+<blockquote>
+<p>년 : 2019 <i class="far fa-keyboard"></i><br>
+월 : 2 <i class="far fa-keyboard"></i><br>
+일 : 17 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>입력하신 날짜는 '휴일'입니다.
+결과가 없습니다.</code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>입력받은 날짜가 평일이면 해당 주의 토요일을 알아낸다.</li>
+<li>입력받은 날짜가 휴일이면 아무것도 안한다.</li>
+</ul>
+<h2>요구사항.010</h2>
+<p>근무 년수를 입력받아 아래와 같이 출력하시오.</p>
+<p><em>입력</em></p>
+<blockquote>
+<p>근무 년수 : 5 <i class="far fa-keyboard"></i><br></p>
+</blockquote>
+<p><em>출력</em></p>
+<pre><code>5년차 중급 개발자입니다.
+당신은 1년전까지 초급 개발자였습니다.
+앞으로 5년 더 근무를 하면 고급 개발자가 됩니다. </code></pre>
+<p><em>조건</em></p>
+<ul>
+<li>1 ~ 4년차 : 초급 개발자</li>
+<li>5 ~ 9년차 : 중급 개발자</li>
+<li>10년차 이상 : 고급 개발자</li>
+</ul>
+<!--
+## 요구사항.
+*입력*
+> 
+*출력*
+```
+```
+*조건*
+- 
+*추가 조건*
+- 
+--></div>			<style>
+				.datebar {
+					text-align: right;
+					border-top: 1px solid #ccc;
+					padding-right: 7px;
+					padding-top: 3px;
+					font-size: 12px;
+					margin: 0px auto;
+					margin-top: 30px;
+					margin-bottom: 100px;
+					color: #aaa;
+				}
+			</style>
+			<script>
+
+				$(".md.question h2").click(function () {
+					
+					var sTop = $(this).offset().top;
+					//alert(sTop);
+
+					$('html, body').animate({
+						scrollTop: sTop - 20
+					}, 500);
+
+				});
+
+				//요구사항 번호 매기기
+				var no = 1;
+				$(".md.question h2").each(function(index, item) {
+					$(item).text($(item).text() + setZero(no));
+					no+=1;
+				});
+
+				function setZero(num) {
+					if (num < 10) return "00" + num;
+					else if (num < 100) return "0" + num;
+					else "" + num;
+				}
+			</script>
+
+
+
+			<textarea id="sourcecopy" style="width: 10px; height: 10px; position: absolute; left: -10000px;"></textarea>
+			<script>
+				//소스 클립보드에 복사하기
+				$(".md.question pre").dblclick(function(evt) {
+					
+					if (evt.ctrlKey && evt.which == 1) {
+						//alert($(this).find("code").text());
+						$("#sourcecopy").val("");
+						$("#sourcecopy").val($(this).find("code").text()).select();
+						document.execCommand("copy");
+						//alert($("#sourcecopy").val());
+						alert('Source Copied');
+					}
+				});
+			</script>
+		</div>
+	</section>
+
+	<script>
+	
+	//가운데 구분선을 문서 높이와 맞추기 위한 작업
+	$("#main, #left, #right").height($(document).height() + 50);
+
+	//외부 링크를 _blank로 처리
+	$(".md a[href^=http").attr("target", "_blank");
+
+	//일부 링크를 _blank로 처리(Class로 이동)
+	$(".md a[href^='/class.php'").attr("target", "_blank");
+
+	//모든 링크에 아이콘 추가
+	$("md a").after('<i class="fas fa-link" style="font-size:.74rem;"></i>');
+
+</script>
+
+</body></html>
