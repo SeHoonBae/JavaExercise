@@ -72,9 +72,12 @@ public class MyArrayList {
 		
 	}
 //	
-//	public int lastIndexOf(String value) {
-//		
-//	}
+	public int lastIndexOf(String value) {
+		for(int i = size()-1; i > 0; i--) {
+			if(list[i].equals(value)) return size()-1-i;
+		}
+		return -1;
+	}
 //	
 	public void clear() {
 		String[] tmp = new String[0];

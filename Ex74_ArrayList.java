@@ -11,6 +11,8 @@ public class Ex74_ArrayList {
 		list.add("홍길동");
 		list.add("아무개");
 		list.add("하하하");
+		list.add("하하하1");
+		
 		
 
 		//읽기
@@ -36,14 +38,16 @@ public class Ex74_ArrayList {
 		for (int i=0; i<list.size(); i++) {
 		    System.out.println(list.get(i));
 		}
+		System.out.println();
 		
 		System.out.println(list.size());
-//
+		System.out.println();
 //		//삽입
 		list.add(1, "호호호");
 		for (int i=0; i<list.size(); i++) {
 		    System.out.println(list.get(i));
 		}
+		System.out.println();
 //
 //		//검색
 		if (list.indexOf("홍길동") > -1) {
@@ -51,7 +55,7 @@ public class Ex74_ArrayList {
 		} else {
 		    System.out.println("홍길동 없음");
 		}
-//
+		System.out.println();
 //		//초기화
 		list.clear();
 		System.out.println(list.size());
