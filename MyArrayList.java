@@ -46,7 +46,7 @@ public class MyArrayList {
 	}
 	
 	public  void add(int index, String value) {
-		if(index == list.length) {
+		if(size() == list.length) {
 			String[] tmp = new String[list.length * 2];
 			for(int i = 0; i < list.length; i++) {
 				tmp[i] = list[i];
@@ -54,9 +54,9 @@ public class MyArrayList {
 			list = tmp;
 		}
 		
-//		for(int i = size() -1; i >= index; i++) {
-//			list[i+1] = list[i];
-//		}
+		for(int i = size() -1; i >= index; i--) {
+			list[i+1] = list[i];
+		}
 		list[index] = value;
 		
 		this.index++;
