@@ -2,7 +2,7 @@ package com.test.example.collection;
 
 public class Ex74_ArrayList {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		//배열 생성
 		MyArrayList list = new MyArrayList();
@@ -11,7 +11,6 @@ public class Ex74_ArrayList {
 		list.add("홍길동");
 		list.add("아무개");
 		list.add("하하하");
-		
 		
 
 		//읽기

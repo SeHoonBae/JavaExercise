@@ -21,45 +21,50 @@ public class MyArrayList {
 			
 		index++;
 		}
-			
-		
 	
-	
-	public String get(int index) {
+	public String get(int index) throws Exception  {
+		if(index > -1 && index < size())
+			return list[index];
+		else throw new Exception();
 		
-		return list[index];
 	}
 	
 	public int size() {
 		return index;
 	}
 	
-	public void set(int index, String value) {
-		list[index] = value;
+	public void set(int index, String value)throws Exception  {
+		if(index > -1 && index < size())
+			list[index] = value;
+		else throw new Exception();
 	}
 	
-	public  void remove(int index) {
-		for(int i = index; i < size()-1; i++) {
-			list[i] = list[i +1];
-		}
-		this.index--;
-	}
-	
-	public  void add(int index, String value) {
-		if(size() == list.length) {
-			String[] tmp = new String[list.length * 2];
-			for(int i = 0; i < list.length; i++) {
-				tmp[i] = list[i];
+	public  void remove(int index)throws Exception {
+		if(index > -1 && index < size()) {
+			for(int i = index; i < size()-1; i++) {
+				list[i] = list[i +1];
 			}
-			list = tmp;
-		}
-		
-		for(int i = size() -1; i >= index; i--) {
-			list[i+1] = list[i];
-		}
-		list[index] = value;
-		
-		this.index++;
+		this.index--;
+		}else throw new Exception();
+	}
+	
+	public  void add(int index, String value)throws Exception {
+		if(index > -1 && index < size()) {
+			if(size() == list.length) {
+				String[] tmp = new String[list.length * 2];
+				for(int i = 0; i < list.length; i++) {
+					tmp[i] = list[i];
+				}
+				list = tmp;
+			}
+			
+			for(int i = size() -1; i >= index; i--) {
+				list[i+1] = list[i];
+			}
+			list[index] = value;
+			
+			this.index++;
+		}else throw new Exception();
 		
 	}
 //	
